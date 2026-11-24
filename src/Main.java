@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -96,14 +97,59 @@ public class Main {
             System.out.println("Cislo je medzi 0 a 8 vcetne");
         }*/
 
-
+        /*
         Scanner mojScanner = new Scanner(System.in);
         System.out.println("Zadaj vek:");
         int vek = mojScanner.nextInt();
 
         if(vek >= 18) {
             System.out.println("Uzivatel je dospely");
-        } else if (vek)
+        } else if (vek >= 65) {
+            System.out.println("Uzivatel je senior");
+        } else {
+            System.out.println("Uzivatel nema pristup");
+        }
+
+         */
+
+        /*
+        // vypocet BMI
+        float vyska;
+        float vaha;
+        float bmi;
+        Scanner mojScanner = new Scanner(System.in);
+
+        System.out.println("Zadaj vysky v metrech:");
+        vyska = mojScanner.nextFloat();
+        System.out.println("Zadaj vahu v kilogramoch:");
+        vaha = mojScanner.nextFloat();
+
+        bmi = vaha / (vyska * vyska);
+        System.out.println(bmi);
+        if(bmi < 18.5f) {
+            System.out.println("Uzivatel ma podvahu");
+        } else if (bmi >= 18.5f && bmi <= 25f) {
+            System.out.println("Uzivatel ma normalnu hmotnost");
+        } else if (bmi >= 25f) {
+            System.out.println("Uzivatel ma nadvahu");
+        } else {
+            System.out.println("Nelze zadat zapornou hmotnost");
+        }
+        */
+
+        // Hod kostkou suda vyhravas, licha prohravas
+        Random nahodnyGenerator = new Random();
+        int hodKostkou;
+        hodKostkou = nahodnyGenerator.nextInt(1, 7);
+        System.out.println("Hozene cislo: " + hodKostkou);
+        if(hodKostkou % 2 == 0) {
+            System.out.println("Cislo je sude, vyhravas");
+        } else  {
+            System.out.println("Cislo je liche, prohravas");
+        }
+
+
+
 
     }
 }
