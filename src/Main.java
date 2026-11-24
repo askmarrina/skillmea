@@ -64,9 +64,46 @@ public class Main {
         System.out.println(prevedeneCislo);
         */
 
+        /*
+        // Matematicke operace
+        int prveCislo = 17;
+        int druheCislo = 5;
+        System.out.println(17 % 5);
+        */
+
+        // Podminky a vetveni
+        /*
+        Scanner mojScanner = new Scanner(System.in);
+        System.out.println("Zadaj prve cislo:");
+        int prveCislo = mojScanner.nextInt();
+
+        if(prveCislo > 8) {
+            System.out.println("Cislo je viac ako 8");
+        }else if (prveCislo == 8) {
+            System.out.println("Cislo je rovno 8");
+        }
+        else {
+            System.out.println("Cislo je menej ako 8");
+        }
+
+         */
+
+        /*Scanner mojScanner = new Scanner(System.in);
+        System.out.println("Zadaj prve cislo:");
+        int prveCislo = mojScanner.nextInt();
+
+        if(prveCislo > 8 || prveCislo < 0) {
+            System.out.println("Cislo je medzi 0 a 8 vcetne");
+        }*/
 
 
+        Scanner mojScanner = new Scanner(System.in);
+        System.out.println("Zadaj vek:");
+        int vek = mojScanner.nextInt();
 
+        if(vek >= 18) {
+            System.out.println("Uzivatel je dospely");
+        } else if (vek)
 
     }
 }
