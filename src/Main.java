@@ -40,6 +40,7 @@ public class Main {
         System.out.println(desCislo1 + desCislo2);
         */
 
+        /*
         // vylepsena kalkulacka
         Scanner mojScanner = new Scanner(System.in);
         System.out.println("Zadaj prve cislo:");
@@ -48,6 +49,22 @@ public class Main {
         int druheCislo = mojScanner.nextInt();
         System.out.println(prvniCislo + druheCislo);
         System.out.println(prvniCislo / druheCislo);
+        */
+
+        /*
+        // String metody
+        String mojText = "Hello World";
+        System.out.println(mojText.indexOf('W'));
+        */
+
+        /*
+        // Prevadeni mezi typy
+        String textoveCislo = "5";
+        int prevedeneCislo = Integer.parseInt(textoveCislo);
+        System.out.println(prevedeneCislo);
+        */
+
+
 
 
 
