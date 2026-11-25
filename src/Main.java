@@ -1,3 +1,4 @@
+import java.awt.desktop.SystemEventListener;
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -214,15 +215,39 @@ public class Main {
             System.out.println(i + ". Hello world");
         }
         */
+
+        /*
         String[] jmenaStudentov = new String[] {"Honza", "Lenka", "Petra", "Peter", "Jolana"};
         for (int i = 0; i < 8; i++) {
             System.out.println(jmenaStudentov[i]);
         }
+        */
 
 
+        /*
+        String[] jmenaStudentov = new String[] {"Honza", "Lenka", "Petra", "Peter", "Jolana"};
+        for (int i = 0; i < jmenaStudentov.length; i++) {
+            System.out.println(jmenaStudentov[i]);
+        }
 
+        // smycka for each
+        for(String jmeno: jmenaStudentov) {
+            System.out.println(jmeno);
+        }
 
+        */
 
+        // то есть, тут ячейки заполнятся: 0, 10, 20, ... 90
+
+        int[] nasobky = new int[10];
+        // naplnim pole
+        for(int i = 0; i < 10; i++) {
+            nasobky[i] = i * 10;
+        }
+        // vypisem pole
+        for(int jedenNasobok: nasobky) {
+            System.out.println(jedenNasobok);
+        }
 
     }
 }
