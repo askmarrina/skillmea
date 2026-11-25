@@ -237,6 +237,8 @@ public class Main {
 
         */
 
+        /*
+
         // то есть, тут ячейки заполнятся: 0, 10, 20, ... 90
 
         int[] nasobky = new int[10];
@@ -248,6 +250,64 @@ public class Main {
         for(int jedenNasobok: nasobky) {
             System.out.println(jedenNasobok);
         }
+        */
 
+
+
+        // smycka while
+
+        int ridiciPromenna = 0;
+        /*
+        while(ridiciPromenna != 5){
+            System.out.println(ridiciPromenna);
+            ridiciPromenna++;
+        }
+
+        */
+
+        /*
+        // do while
+        do {
+            System.out.println(ridiciPromenna);
+            ridiciPromenna++;
+        } while(ridiciPromenna != 5);
+
+         */
+
+        // Blackjack
+        int skoreHrace = 0;
+        int skoreKrupiera = 0;
+        int tazenaKarta = 0;
+        String uzivatelskyVstup;;
+        Random nahodnyGenerator = new Random();
+        Scanner mojScanner = new Scanner(System.in);
+
+        do {
+            tazenaKarta = nahodnyGenerator.nextInt(1, 14);
+            System.out.println("Tazena karta byla: " + tazenaKarta);
+            skoreHrace = skoreHrace + tazenaKarta;
+            System.out.println("Skore hrace je: " + skoreHrace);
+
+            if(skoreHrace > 21) {
+                System.out.println("Prohral si, prekrocil si 21");
+                break;
+            }
+
+            System.out.println("Pro dalsiu kartu stiskni y");
+            System.out.println("Pokud nechces dalsi kartu n");
+            uzivatelskyVstup = mojScanner.nextLine();
+
+            if(uzivatelskyVstup.equals("y")) {
+                continue;
+
+            } else if (uzivatelskyVstup.equals("n")) {
+                while (skoreKrupiera < skoreHrace) {
+                    tazenaKarta = nahodnyGenerator.nextInt(1, 14);
+                    skoreKrupiera = skoreKrupiera + tazenaKarta;
+                }
+                break;
+            }
+
+        } while (true);
     }
 }
