@@ -309,5 +309,15 @@ public class Main {
             }
 
         } while (true);
+
+        System.out.println("Skore hrace: " + skoreHrace);
+        System.out.println("Skore krupiera: " + skoreKrupiera);
+        if (skoreHrace > skoreKrupiera && skoreHrace < 21 || skoreKrupiera > 21) {
+            System.out.println("Vyhral si");
+        } else if (skoreHrace == skoreKrupiera) {
+            System.out.println("Je to remiza");
+        } else {
+            System.out.println("Prohral si");
+        }
     }
 }
