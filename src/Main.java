@@ -208,7 +208,21 @@ public class Main {
         viceDimPole[0][0] = 83; // в первом массиве, первый элемент
         */
 
-        System.out.println("Hello world");
+        // smycka
+
+        /*for (int i = 0; i < 8; i++) {
+            System.out.println(i + ". Hello world");
+        }
+        */
+        String[] jmenaStudentov = new String[] {"Honza", "Lenka", "Petra", "Peter", "Jolana"};
+        for (int i = 0; i < 8; i++) {
+            System.out.println(jmenaStudentov[i]);
+        }
+
+
+
+
+
 
     }
 }
