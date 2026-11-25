@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -137,6 +138,7 @@ public class Main {
         }
         */
 
+        /*
         // Hod kostkou suda vyhravas, licha prohravas
         Random nahodnyGenerator = new Random();
         int hodKostkou;
@@ -147,9 +149,66 @@ public class Main {
         } else  {
             System.out.println("Cislo je liche, prohravas");
         }
+        */
 
+/*
+        // switch - vyber dne
+        Scanner mojScanner = new Scanner(System.in);
+        int cisloDne;
+        System.out.println("Zadaj cislo dne:");
+        cisloDne = mojScanner.nextInt();
+        switch(cisloDne) {
+            case 1:
+                System.out.println("Je pondelok");
+                break;
+            case 2:
+                System.out.println("Je utorok");
+                break;
+            case 3:
+                System.out.println("Je streda");
+                break;
+            case 4:
+                System.out.println("Je stvrtok");
+                break;
+            case 5:
+                System.out.println("Je piatok");
+                break;
+            case 6:
+                System.out.println("Je sobota");
+                break;
+            case 7:
+                System.out.println("Je nedela");
+                break;
 
+        }
+        */
 
+        // Pole
+        /*
+        int[] znamky = new int[5]; // будет 5 элементов в массиве
+        znamky[0] = 3;
+        znamky[1] = 5;
+        znamky[2] = 1;
+        znamky[3] = 4;
+        znamky[4] = 1;
+
+        // int[] znamky2 = new int[] {3, 4, 5, 2, 1}; тоже создание массива
+        System.out.println(znamky);
+        */
+
+        /*
+        String[] jmenaStudentov = new String[] {"Honza", "Lenka", "Petra", "Peter", "Jolana"};
+        System.out.println(jmenaStudentov[3] + jmenaStudentov[4]);
+        System.out.println(jmenaStudentov[3].toUpperCase());
+        System.out.println(jmenaStudentov[3].length());
+        */
+
+        /*
+        int[][] viceDimPole = new int[2][2]; // 2 массива с 2 элементами
+        viceDimPole[0][0] = 83; // в первом массиве, первый элемент
+        */
+
+        System.out.println("Hello world");
 
     }
 }
